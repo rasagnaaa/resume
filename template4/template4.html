@@ -1,0 +1,116 @@
+<head>
+  <link rel="stylesheet" href="bodystyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css">
+  <link rel="stylesheet" src="print.css" media="print" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+  <script src="scriptfile.js"></script>
+</head>
+<body>
+	<div class="base"> <img src = "http://www.sreenidhi.edu.in/assets/images/sreenidhi-logo.png" height = "60" width = "200" alt="college logo"> </div>
+	<div class="topnav">
+		<center>
+		<button id="add_education" class="addnew">Add Education</button><br>
+		<button id="add_hobby" class="addnew">Add Hobby</button><br>
+		<button id="add_language" class="addnew">Add Language</button><br>
+		<button id="add_skill" class="addnew">Add Skills</button><br>
+		<button id="add_internship" class="addnew">Add Internship</button><br>
+		<button id="add_project" class="addnew">Add Project</button><br>
+		<button id="add_achievement" class="addnew">Add Achievement</button><br>
+		<button id="add_course" class="addnew">Add Course</button><br>
+		<button id="add_publication" class="addnew">Add Publication</button><br>
+		<button id="add_eca" class="addnew">Add ECA</button><br>
+		<button class="addnew" style="background-color:black; color:white" onclick="printJS({printable:'resume', type:'html', css:'bodystyle.css', scanStyles:'true'})">Print Preview</button><br>
+		</center>
+	</div>
+	<div class="paper" id="page">
+		<table id="resume" width = "100%" class="trans">
+			<form>
+				<tr>
+					<td width ="400" style = "padding:0px">
+						<div id="names" align="left" style="margin-top:10px; margin-right:0px">
+							<input type="text" class="name" size="17" placeholder="FIRST NAME" style="border:none; text-align:left">
+							<input type="text" class="name" size="17" placeholder="LAST NAME" style="border:none; text-align:left"><br>
+						</div>
+					</td>
+					<td width="200" style = "padding:40px">
+						<div id="personal_info" align="left">
+							<input type="text" class="personalinfo" size = "30" placeholder="Contact No" style="border:none; color:black; text-align:left"><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Email Id" style="border:none; color:black; text-align:left"><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="LinkedIn Id" style="border:none; color:black; text-align:left"><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="City" style="border:none; color:black; text-align:left"><br>
+						</div>
+					</td>
+				</tr>
+				<tr valign = "top">
+
+					<td  width = "400" height="800">
+						<div id="education" class="new">
+							<P class="headingR" style="display:inline-block">EDUCATION</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a>
+							<br><input type="text" size = "30" placeholder="Standard" class="personalinfo" ><br>
+							<p style="font-family:Georgia ; margin-left:0px; font-size:10px"> Sreenidhi Institute of Science and <br>Technology </p>
+							<input type="text" class="personalinfo" size = "10" placeholder="Start Year" style="border:none; margin-left:0px">
+							<input type="text" class="personalinfo" size = "10" placeholder="End Year" style="border:none; margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="GPA" style="border:none; margin-left:0px"><br><br>
+						</div>
+
+						<div id="internships" class="new">
+							<P class="headingR" style="display:inline-block">INTERNSHIPS</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Company Name" style="border:none; margin-left:0px">
+							<input type="text" class="personalinfo" size = "40" placeholder="Role / Subject" style="border:none; margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Duration" style="border:none; margin-left:0px">
+						</div>						
+						<div id="projects" class="new">
+							<P class="headingR" style="display:inline-block">PROJECTS</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Name" style="border:none; font-weight: bold; margin-left:0px">
+							<input type="text" class="personalinfo" size = "30" placeholder="Duration" style="border:none; margin-left:52px"><br>
+							<input type="text" class="personalinfo" size = "75" placeholder="One line Description" style="border:none; margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "40" placeholder="Role" style="border:none; margin-left:0px">
+							<input type="text" class="personalinfo" size = "30" placeholder="Project Link" style="border:none; margin-left:6px"><br>
+						</div>
+						<div id="achievements" class="new">
+							<P class="headingR" style="display:inline-block">ACHIEVEMENTS</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Position" style="border:none; font-weight: bold; margin-left:0px"><br>
+														<input type="text" class="personalinfo" size = "75" placeholder="Event" style="border:none;  margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "75" placeholder="Reason" style="border:none; margin-left:0px">
+						</div>
+						<div id="courses" class="new">
+							<P class="headingR" style="display:inline-block">CERTIFIED COURSES</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a><br>
+							<input type="text" class="personalinfo" size = "80" placeholder="Field / Subject" style="border:none; font-weight: bold; margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Platform" style="border:none; margin-left:0px">
+							<input type="text" class="personalinfo" size = "30" placeholder="% if any" style="border:none; margin-left:20px">
+						</div>
+						<div id="publications" class="new">
+							<P class="headingR" style="display:inline-block">RESEARCH PUBLICATIONS</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a><br>
+							<input type="text" class="personalinfo" size = "90" placeholder="Paper Title" style="border:none; margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "90" placeholder="Journal with Volume of publication" style="border:none; margin-left:0px">
+						</div>
+
+					</td>
+					<td  width = "150" height="800">
+						<div id="technicalskills" class="new">
+							<P class="heading" style="display:inline-block"> TECHNICAL SKILLS</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Skill" style="border:none; margin-left:40px">
+							<input type="text" class="personalinfo" size = "30" placeholder="Skill" style="border:none; margin-left:40px"><br>
+						</div>
+						<div id="hobbies" class="new">
+							<P class="heading" style="display:inline-block">HOBBIES</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a>
+							<input type="text" class="personalinfo" size = "30" placeholder="Hobby" style="border:none; margin-left:40px"><br>
+						</div>
+						<div id="languages" class="new">
+							<P class="heading" style="display:inline-block">LANGUAGES</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a>
+							<input type="text" class="personalinfo" size = "30" placeholder="Language" style="border:none; margin-left:40px"><br>
+						</div>
+												<div id="eca" class="new">
+							<P class="heading" style="display:inline-block">EXTRA CIRRICULAR <br>ACTIVITIES</p><a href="#" class="remove_field" style="margin-right:30px; margin-top:16px; color:black; float:right"><i class="fa fa-trash-o show-on-hover" aria-hidden="true"></i></a><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Role" style="border:none; margin-left:40px">
+							<input type="text" class="personalinfo" size = "50" placeholder="Event" style="border:none; margin-left:40px">
+							<input type="text" class="personalinfo" size = "40" placeholder="Club / Host" style="border:none; margin-left:40px">
+						</div>
+					</td>
+				</tr>
+			</form>
+		</table>
+	</div>
+</body>
